@@ -186,6 +186,49 @@ a.link-internal {
 a.link-internal:hover {
   color: #ff0000;
   text-decoration: underline;
+}
+
+/* ===== 手机端适配 ===== */
+@media screen and (max-width: 768px) {
+  
+  /* 让内容宽度占满,左右加足够留白 */
+  #story {
+    max-width: 100%;
+    padding: 10px 20px;   /* 上下10px,左右20px留白 */
+    margin: 0 auto;
+  }
+  
+  /* 整体字号稍微缩小一点,手机屏幕短 */
+  html {
+    font-size: 110%;
+  }
+  
+  /* 让链接选项独占一行,手指好点 */
+  a.link-internal {
+    font-size: 120%;       /* 手机上不用170%那么大 */
+    display: block;        /* 每个选项占一整行 */
+    margin: 0.6em 0;
+    padding: 0.4em 0;
+  }
+  
+  /* 倒计时框调整 */
+  .countdown-timer {
+    font-size: 110%;
+    padding: 4px 12px;
+  }
+
+  /* 表格在小屏幕上缩小 */
+  table {
+    font-size: 90%;
+  }
+  
+  /* 首段大标题缩小一点 */
+  span[style*="font-size: 150%"] {
+    font-size: 130% !important;
+  }
+  span[style*="font-size: 170%"] {
+    font-size: 140% !important;
+  }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// ==================================================
 //  2008 全球金融海啸交互式剧本 - 核心机制脚本
 //  适用 Twine 故事格式: SugarCube 2
